@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPSC Xero\n"
+"POT-Creation-Date: 2014-08-06 23:23+0800\n"
+"PO-Revision-Date: 2014-08-06 23:23+0800\n"
+"Last-Translator: Plugify Plugins <hello@plugify.io>\n"
+"Language-Team: Plugify Plugins <support@plugify.io>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: "
+"wpsc-xero\n"
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:58
+msgid "Draft"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:59
+msgid "Submitted for Approval"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:60
+msgid "Authorized"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:71
+msgid "Xero Behaviour"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:87
+msgid "Create invoices"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:91
+msgid "Automatically create invoices in Xero"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:100
+msgid "Send payments"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:104
+msgid "Automatically send payments to Xero"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:113
+msgid "Invoice Status"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:125
+msgid "Choose what status invoices should be created with"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:135
+msgid "Sales account code"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:141
+msgid "Code of account used to track sales"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:151
+msgid "Payments account code"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:157
+msgid "Code of account used to track payments"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:167
+msgid "Xero Application Settings"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:175
+msgid "Consumer key"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:181
+msgid "The consumer key of your Xero application."
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:191
+msgid "Consumer secret"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:197
+msgid "The consumer secret of your Xero application."
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:207
+msgid "Private key"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:213
+msgid "Entire contents of private key file (.pem)"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:223
+msgid "Public key"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-settings-tab-xero.php:229
+msgid "Entire contents of public key file (.cer)"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:126
+#, php-format
+msgid ""
+"%s has been deactivated because it requires WP e-Commerce to be installed "
+"and activated"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:137
+#, php-format
+msgid ""
+"%s requires WP e-Commerce version 3.8 or greater. Please update WP e-"
+"Commerce."
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:170
+msgid "Xero Invoice Details"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:177
+msgid "Xero settings not configured"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:179
+msgid "Looks like you need to configure your Xero settings!"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:180
+msgid "You can <a href=\""
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:191
+msgid "No associated invoice found"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:193
+msgid "Generate Invoice Now"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:212
+msgid "Disassociate Invoice"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:213
+msgid "View in Xero"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:296
+msgid "Payment successfully applied."
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:303
+msgid ""
+"Payment could not be applied to Xero invoice. Please ensure your account "
+"codes are correct and that the invoice has been authorized. "
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:331
+msgid "successfully created"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:354
+msgid "Invoice could not be created."
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:386
+msgid "We could not get the invoice details"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:386
+msgid "Are your Xero settings configured correctly?"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:410
+msgid ""
+"Xero invoice could not be created. Please refresh the page and check Payment "
+"Notes."
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:443
+msgid "Invoice was successfully disassociated"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:549
+msgid "Xero settings have not been configured correctly for payments"
+msgstr ""
+
+#: wpsc-xero/class.wpsc-xero.php:692
+msgid "Xero settings have not been configured"
+msgstr ""

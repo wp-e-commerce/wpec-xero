@@ -1,0 +1,33 @@
+/*
+!* wpsc-xero back-end styles
+*/
+#wpsc-xero .text-center {
+	text-align: center;
+}
+
+#wpsc-xero .inside h3 {
+	padding-left: 0;
+}
+
+#wpsc-xero #wpsc_xero_invoice_details {
+	display: none;
+}
+
+#wpsc-xero .major-publishing-actions {
+	padding: 10px 0;
+	clear: both;
+}
+
+	#wpsc-xero .major-publishing-actions .publishing-action {
+		text-align: left;
+		float: left;
+		line-height: 23px;
+	}
+
+		#wpsc-xero .major-publishing-actions .publishing-action .button-secondary {
+			margin-left: 10px;
+		}
+
+#wpsc-xero .wpsc-invoice-actions {
+	display: none;
+}
