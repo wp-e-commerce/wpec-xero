@@ -618,7 +618,8 @@ final class Plugify_WPSC_Xero {
 
 		// Prepare required data such as customer details and cart contents
 		$cart = $purchase_log->get_cart_contents();
-
+		$purchase_id = $purchase_log->get('id');
+		
 		try {
 
 			// Instantiate new invoice object
@@ -641,25 +642,13 @@ final class Plugify_WPSC_Xero {
 
 			}
 
-			// Get the user ID
-			$user_id = $wpdb->get_var( "SELECT `meta_value` FROM `{$wpdb->prefix}wpsc_purchase_meta` WHERE `meta_key` = 'visitor_id';" );
-
-			// From that user ID, get name and email
-			$user_data = $wpdb->get_results( "SELECT `meta_key`, `meta_value` FROM `{$wpdb->prefix}wpsc_visitor_meta` WHERE `wpsc_visitor_id` = '$user_id';", OBJECT );
-
-			// Init user data array
-			$user_info = array();
-
-			// Grab the user data that we need
-			foreach( $user_data as $data ) {
-				$user_info[$data->meta_key] = $data->meta_value;
-			}
-
+			$checkout_data = new WPSC_Checkout_Form_Data( $purchase_id );
+			
 			// Set contact (invoice recipient) details
 			$invoice->set_contact( new Xero_Contact( array(
-				'first_name' => $user_info['billingfirstname'],
-				'last_name'  => $user_info['billinglastname'],
-				'email'      => $user_info['billingemail']
+				'first_name' => $checkout_data->get( 'billingfirstname' ),
+				'last_name'  => $checkout_data->get( 'billinglastname' ),
+				'email'      => $checkout_data->get( 'billingemail' )
 			) ) );
 
 			// Add purchased items to invoice
@@ -680,7 +669,7 @@ final class Plugify_WPSC_Xero {
 			if ( isset( $settings['invoice_status'] ) && ! empty( $settings['invoice_status'] ) ) {
 				$invoice->set_status( $settings['invoice_status'] );
 			}
-
+			
 			// Send the invoice to Xero
 			if ( $this->settings_are_valid() ) {
 				return @$this->put_invoice( $invoice, $purchase_log );
